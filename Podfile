@@ -6,6 +6,7 @@ target 'Kanaco' do
   # use_frameworks!
 
   # Pods for Kanaco
+  pod 'AFNetworking'
 
   target 'KanacoTests' do
     inherit! :search_paths
