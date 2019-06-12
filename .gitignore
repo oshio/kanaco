@@ -1,0 +1,9 @@
+*.xccheckout
+*.xcscmblueprint
+xcdebugger/
+xcuserdata/
+
+build/
+DerivedData/
+
+Pods/
