@@ -18,6 +18,7 @@
 		9627AE9422B1396800486A26 /* KanacoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AE9322B1396800486A26 /* KanacoUITests.m */; };
 		9627AEA822B13E0800486A26 /* KanaConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AEA722B13E0800486A26 /* KanaConverter.m */; };
 		9627AEAB22B146C200486A26 /* APIRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AEAA22B146C200486A26 /* APIRequestHandler.m */; };
+		9627AEAE22B2962800486A26 /* KanaConverterMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AEAD22B2962800486A26 /* KanaConverterMock.m */; };
 		BC0CB17F26541B5DE966852D /* libPods-KanacoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B0E0A5F1BF005C9ED61580 /* libPods-KanacoTests.a */; };
 		CDD808781A415C9317A71A81 /* libPods-KanacoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5A89991E4E3C56E0437F3A /* libPods-KanacoUITests.a */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,8 @@
 		9627AEA722B13E0800486A26 /* KanaConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanaConverter.m; sourceTree = "<group>"; };
 		9627AEA922B146C200486A26 /* APIRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIRequestHandler.h; sourceTree = "<group>"; };
 		9627AEAA22B146C200486A26 /* APIRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIRequestHandler.m; sourceTree = "<group>"; };
+		9627AEAC22B2962800486A26 /* KanaConverterMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanaConverterMock.h; sourceTree = "<group>"; };
+		9627AEAD22B2962800486A26 /* KanaConverterMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanaConverterMock.m; sourceTree = "<group>"; };
 		C17D5AA5B4CA6803820E12D7 /* Pods-KanacoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanacoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanacoUITests/Pods-KanacoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6582A904E0D54099B02724E /* Pods-KanacoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanacoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanacoTests/Pods-KanacoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2B0E0A5F1BF005C9ED61580 /* libPods-KanacoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KanacoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				9627AE8822B1396800486A26 /* KanacoTests.m */,
+				9627AEAC22B2962800486A26 /* KanaConverterMock.h */,
+				9627AEAD22B2962800486A26 /* KanaConverterMock.m */,
 				9627AE8A22B1396800486A26 /* Info.plist */,
 			);
 			path = KanacoTests;
@@ -397,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9627AE8922B1396800486A26 /* KanacoTests.m in Sources */,
+				9627AEAE22B2962800486A26 /* KanaConverterMock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
