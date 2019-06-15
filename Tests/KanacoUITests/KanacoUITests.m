@@ -40,4 +40,14 @@
     XCTAssertEqualObjects(app.textViews[@"結果表示エリア"].value, @"へんかんできているか かくにんします");
 }
 
+//文字をけすボタンのテスト
+- (void)testClearButton
+{
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.textViews[@"入力エリア"] tap];
+    [app.textViews[@"入力エリア"] typeText:@"文字を消せるか確認します"];
+    [app.buttons[@"けす"] tap];
+    XCTAssertEqualObjects(app.textViews[@"入力エリア"].value, @"");
+}
+
 @end
