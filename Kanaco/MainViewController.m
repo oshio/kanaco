@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "MainViewController+ShowAlert.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *inputTextView;
@@ -30,6 +31,7 @@
     NSString *inputStringWithoutSpace = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
     if(inputString == nil || inputStringWithoutSpace.length == 0){
+        [self showAutoDismissAlertWithTitle:@"" message:@"なにか もじを いれてね！"];
         return;
     }
     
@@ -48,6 +50,7 @@
 
 - (void)didReceiveError:(NSError *)error
 {
-    
+    [self showAutoDismissAlertWithTitle:@"つうしん しっぱい" message:@"あとで もういちど ためしてね"];
 }
+
 @end
