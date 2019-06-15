@@ -43,6 +43,11 @@
     [converter requestWithInputString:inputString];
 }
 
+- (IBAction)clearInputText:(id)sender
+{
+    self.inputTextView.text = nil;
+}
+
 - (IBAction)copyResultToClipboard:(id)sender
 {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
