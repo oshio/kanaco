@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		740FAF4961C3DA91AFF39AD4 /* libPods-Kanaco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF7D067992B109F6ACF2750 /* libPods-Kanaco.a */; };
 		9627AE7122B1396700486A26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AE7022B1396700486A26 /* AppDelegate.m */; };
-		9627AE7422B1396700486A26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AE7322B1396700486A26 /* ViewController.m */; };
+		9627AE7422B1396700486A26 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AE7322B1396700486A26 /* MainViewController.m */; };
 		9627AE7722B1396700486A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9627AE7522B1396700486A26 /* Main.storyboard */; };
 		9627AE7922B1396800486A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9627AE7822B1396800486A26 /* Assets.xcassets */; };
 		9627AE7C22B1396800486A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9627AE7A22B1396800486A26 /* LaunchScreen.storyboard */; };
@@ -48,8 +48,8 @@
 		9627AE6C22B1396700486A26 /* Kanaco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanaco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9627AE6F22B1396700486A26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9627AE7022B1396700486A26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9627AE7222B1396700486A26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9627AE7322B1396700486A26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9627AE7222B1396700486A26 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9627AE7322B1396700486A26 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9627AE7622B1396700486A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9627AE7822B1396800486A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9627AE7B22B1396800486A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 				9627AEA722B13E0800486A26 /* KanaConverter.m */,
 				9627AEA922B146C200486A26 /* APIRequestHandler.h */,
 				9627AEAA22B146C200486A26 /* APIRequestHandler.m */,
-				9627AE7222B1396700486A26 /* ViewController.h */,
-				9627AE7322B1396700486A26 /* ViewController.m */,
+				9627AE7222B1396700486A26 /* MainViewController.h */,
+				9627AE7322B1396700486A26 /* MainViewController.m */,
 				9627AE7522B1396700486A26 /* Main.storyboard */,
 				9627AE7822B1396800486A26 /* Assets.xcassets */,
 				9627AE7A22B1396800486A26 /* LaunchScreen.storyboard */,
@@ -389,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9627AE7422B1396700486A26 /* ViewController.m in Sources */,
+				9627AE7422B1396700486A26 /* MainViewController.m in Sources */,
 				9627AEA822B13E0800486A26 /* KanaConverter.m in Sources */,
 				9627AEAB22B146C200486A26 /* APIRequestHandler.m in Sources */,
 				9627AE7F22B1396800486A26 /* main.m in Sources */,

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KanaConverter.h"
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController <KanaConverterDelegate>
 
 
 @end

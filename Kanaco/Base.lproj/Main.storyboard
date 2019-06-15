@@ -1,24 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nib-iO-6wd" userLabel="BorderView">
+                                <rect key="frame" x="20" y="44" width="374" height="366"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-cv-b3e" userLabel="InputBaseView">
+                                        <rect key="frame" x="1" y="1" width="372" height="364"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="平仮名に変換する文章" translatesAutoresizingMaskIntoConstraints="NO" id="hRL-Lp-irq">
+                                                <rect key="frame" x="0.0" y="37" width="372" height="327"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <viewLayoutGuide key="safeArea" id="q51-tQ-Rz8"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ひらがなにしたい ぶんしょうを いれてね" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="WZk-zp-DIs">
+                                                <rect key="frame" x="0.0" y="0.0" width="372" height="36"/>
+                                                <color key="backgroundColor" red="0.94616788625717163" green="0.73085016012191772" blue="0.56899785995483398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="tTf-Cw-Tyo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.9052836299" green="0.54643326999999997" blue="0.26805785300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="hRL-Lp-irq" firstAttribute="leading" secondItem="3Mx-cv-b3e" secondAttribute="leading" id="3rq-8x-rY9"/>
+                                            <constraint firstItem="WZk-zp-DIs" firstAttribute="top" secondItem="3Mx-cv-b3e" secondAttribute="top" id="57X-VI-NBf"/>
+                                            <constraint firstAttribute="bottom" secondItem="hRL-Lp-irq" secondAttribute="bottom" id="DLZ-Cw-kRe"/>
+                                            <constraint firstAttribute="trailing" secondItem="hRL-Lp-irq" secondAttribute="trailing" id="TCI-GH-ggR"/>
+                                            <constraint firstItem="WZk-zp-DIs" firstAttribute="leading" secondItem="3Mx-cv-b3e" secondAttribute="leading" id="kX1-RL-Syb"/>
+                                            <constraint firstAttribute="trailing" secondItem="WZk-zp-DIs" secondAttribute="trailing" id="wfp-PG-hZI"/>
+                                            <constraint firstItem="hRL-Lp-irq" firstAttribute="top" secondItem="WZk-zp-DIs" secondAttribute="bottom" constant="1" id="zXF-ZU-Vd8"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9052836299" green="0.54643326999999997" blue="0.26805785300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3Mx-cv-b3e" firstAttribute="leading" secondItem="Nib-iO-6wd" secondAttribute="leading" constant="1" id="6e2-AB-t2C"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Mx-cv-b3e" secondAttribute="bottom" constant="1" id="FeS-t7-egC"/>
+                                    <constraint firstItem="3Mx-cv-b3e" firstAttribute="top" secondItem="Nib-iO-6wd" secondAttribute="top" constant="1" id="UVF-x8-hPa"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Mx-cv-b3e" secondAttribute="trailing" constant="1" id="jTy-3n-T7G"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIc-b7-zrM">
+                                <rect key="frame" x="20" y="426" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.90528362989425659" green="0.54643326997756958" blue="0.26805785298347473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="85a-6T-1SH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="ひらがなにする">
+                                    <color key="titleColor" red="0.98975080251693726" green="0.93000084161758423" blue="0.88356029987335205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dqn-8F-8cR"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ここに ひらがなが でてくるよ" translatesAutoresizingMaskIntoConstraints="NO" id="oJ7-iI-fgy">
+                                <rect key="frame" x="20" y="486" width="374" height="376"/>
+                                <color key="backgroundColor" red="0.98975080250000003" green="0.93000084159999996" blue="0.88356029989999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97798639535903931" green="0.91823500394821167" blue="0.8717951774597168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nib-iO-6wd" secondAttribute="trailing" constant="20" id="FRX-cg-tPS"/>
+                            <constraint firstItem="HIc-b7-zrM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PfC-dl-YKA"/>
+                            <constraint firstItem="HIc-b7-zrM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QZk-jB-vcH"/>
+                            <constraint firstItem="oJ7-iI-fgy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qj2-30-zoj"/>
+                            <constraint firstItem="oJ7-iI-fgy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rc8-VE-SEa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HIc-b7-zrM" secondAttribute="trailing" constant="20" id="Vd4-b8-gSh"/>
+                            <constraint firstItem="oJ7-iI-fgy" firstAttribute="top" secondItem="HIc-b7-zrM" secondAttribute="bottom" constant="16" id="XaD-WH-eX9"/>
+                            <constraint firstItem="HIc-b7-zrM" firstAttribute="top" secondItem="Nib-iO-6wd" secondAttribute="bottom" constant="16" id="cVI-Lb-LPs"/>
+                            <constraint firstItem="Nib-iO-6wd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gBW-Nm-EW8"/>
+                            <constraint firstItem="Nib-iO-6wd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mlT-yN-gjf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oJ7-iI-fgy" secondAttribute="trailing" constant="20" id="rqX-WE-XAQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="hRL-Lp-irq" id="fMx-zP-l9N"/>
+                        <outlet property="outputTextView" destination="oJ7-iI-fgy" id="F3C-kC-Dwn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
         </scene>
     </scenes>
 </document>
