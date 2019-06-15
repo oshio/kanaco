@@ -7,3 +7,6 @@ build/
 DerivedData/
 
 Pods/
+
+vendor/
+
