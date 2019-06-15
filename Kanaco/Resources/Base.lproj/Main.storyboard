@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -96,26 +96,48 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ここに ひらがなが でてくるよ" translatesAutoresizingMaskIntoConstraints="NO" id="oJ7-iI-fgy">
-                                <rect key="frame" x="20" y="486" width="374" height="376"/>
+                                <rect key="frame" x="20" y="486" width="374" height="300"/>
                                 <color key="backgroundColor" red="0.98975080250000003" green="0.93000084159999996" blue="0.88356029989999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="結果表示エリア"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mx-t8-6mg">
+                                <rect key="frame" x="20" y="802" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.9052836299" green="0.54643326999999997" blue="0.26805785300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ehT-D5-GIG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="コピーする">
+                                    <color key="titleColor" red="0.98975080250000003" green="0.93000084159999996" blue="0.88356029989999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="copyResultToClipboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nm1-yv-hmM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97798639535903931" green="0.91823500394821167" blue="0.8717951774597168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nib-iO-6wd" secondAttribute="trailing" constant="20" id="FRX-cg-tPS"/>
                             <constraint firstItem="HIc-b7-zrM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PfC-dl-YKA"/>
                             <constraint firstItem="HIc-b7-zrM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QZk-jB-vcH"/>
-                            <constraint firstItem="oJ7-iI-fgy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qj2-30-zoj"/>
+                            <constraint firstItem="5Mx-t8-6mg" firstAttribute="top" secondItem="oJ7-iI-fgy" secondAttribute="bottom" constant="16" id="Qlm-So-LAP"/>
                             <constraint firstItem="oJ7-iI-fgy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rc8-VE-SEa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HIc-b7-zrM" secondAttribute="trailing" constant="20" id="Vd4-b8-gSh"/>
                             <constraint firstItem="oJ7-iI-fgy" firstAttribute="top" secondItem="HIc-b7-zrM" secondAttribute="bottom" constant="16" id="XaD-WH-eX9"/>
+                            <constraint firstItem="5Mx-t8-6mg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yho-HW-GeS"/>
                             <constraint firstItem="HIc-b7-zrM" firstAttribute="top" secondItem="Nib-iO-6wd" secondAttribute="bottom" constant="16" id="cVI-Lb-LPs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Mx-t8-6mg" secondAttribute="trailing" constant="20" id="diw-JE-bNB"/>
                             <constraint firstItem="Nib-iO-6wd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gBW-Nm-EW8"/>
                             <constraint firstItem="Nib-iO-6wd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mlT-yN-gjf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Mx-t8-6mg" secondAttribute="bottom" constant="16" id="p7A-YL-H1i"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oJ7-iI-fgy" secondAttribute="trailing" constant="20" id="rqX-WE-XAQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -123,11 +145,12 @@
                     <connections>
                         <outlet property="inputTextView" destination="hRL-Lp-irq" id="fMx-zP-l9N"/>
                         <outlet property="outputTextView" destination="oJ7-iI-fgy" id="F3C-kC-Dwn"/>
+                        <outlet property="resultCopyButton" destination="5Mx-t8-6mg" id="eJT-ZV-uC1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
+            <point key="canvasLocation" x="131.25" y="103.52112676056338"/>
         </scene>
     </scenes>
 </document>
