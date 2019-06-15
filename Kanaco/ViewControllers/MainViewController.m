@@ -35,6 +35,8 @@
         return;
     }
     
+    [self.inputTextView resignFirstResponder];
+
     KanaConverter *converter = [[KanaConverter alloc] initWithDelegate:self];
     [converter requestWithInputString:inputString];
 }
