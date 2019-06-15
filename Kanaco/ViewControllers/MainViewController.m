@@ -46,6 +46,7 @@
 - (IBAction)clearInputText:(id)sender
 {
     self.inputTextView.text = nil;
+    [self resetOutputView];
 }
 
 - (IBAction)copyResultToClipboard:(id)sender
@@ -54,6 +55,12 @@
     [pasteboard setString:self.outputTextView.text];
     
     [self showAutoDismissAlertWithTitle:@"" message:@"コピーしたよ！"];
+}
+
+- (void)resetOutputView
+{
+    self.outputTextView.text = @"ここに ひらがなが でてくるよ";
+    self.resultCopyButton.hidden = YES;
 }
 
 #pragma mark - KanaConverterDelegate
@@ -77,8 +84,7 @@
 {
     //入力エリアの文字を消したら結果表示エリアも元に戻す
     if(textView.text == nil || textView.text.length == 0){
-        self.outputTextView.text = @"ここに ひらがなが でてくるよ";
-        self.resultCopyButton.hidden = YES;
+        [self resetOutputView];
     }
 }
 
