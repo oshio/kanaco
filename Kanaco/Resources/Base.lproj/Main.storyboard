@@ -24,9 +24,10 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-cv-b3e" userLabel="InputBaseView">
                                         <rect key="frame" x="1" y="1" width="372" height="364"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="平仮名に変換する文章" translatesAutoresizingMaskIntoConstraints="NO" id="hRL-Lp-irq">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="平仮名に変換する文章" translatesAutoresizingMaskIntoConstraints="NO" id="hRL-Lp-irq">
                                                 <rect key="frame" x="0.0" y="37" width="372" height="327"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="入力エリア"/>
                                                 <viewLayoutGuide key="safeArea" id="q51-tQ-Rz8"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -94,6 +95,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ここに ひらがなが でてくるよ" translatesAutoresizingMaskIntoConstraints="NO" id="oJ7-iI-fgy">
                                 <rect key="frame" x="20" y="486" width="374" height="376"/>
                                 <color key="backgroundColor" red="0.98975080250000003" green="0.93000084159999996" blue="0.88356029989999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="結果表示エリア"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>

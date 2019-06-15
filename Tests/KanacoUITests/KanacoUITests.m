@@ -30,10 +30,14 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
-- (void)testExample {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
+//変換のテスト
+- (void)testConversion
+{
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.textViews[@"入力エリア"] tap];
+    [app.textViews[@"入力エリア"] typeText:@"変換できているか確認します"];
+    [app.buttons[@"ひらがなにする"] tap];
+    XCTAssertEqualObjects(app.textViews[@"結果表示エリア"].value, @"へんかんできているか かくにんします");
 }
 
 @end
