@@ -31,6 +31,9 @@
                                                 <viewLayoutGuide key="safeArea" id="q51-tQ-Rz8"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dMh-lJ-PAP"/>
+                                                </connections>
                                             </textView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ひらがなにしたい ぶんしょうを いれてね" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="WZk-zp-DIs">
                                                 <rect key="frame" x="0.0" y="0.0" width="372" height="36"/>

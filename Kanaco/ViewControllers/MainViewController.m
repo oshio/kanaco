@@ -55,4 +55,14 @@
     [self showAutoDismissAlertWithTitle:@"つうしん しっぱい" message:@"あとで もういちど ためしてね"];
 }
 
+#pragma mark - UITextViewDelegate
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    //入力エリアの文字を消したら結果表示エリアも元に戻す
+    if(textView.text == nil || textView.text.length == 0){
+        self.outputTextView.text = @"ここに ひらがなが でてくるよ";
+    }
+}
+
 @end

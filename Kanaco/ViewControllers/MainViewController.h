@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "KanaConverter.h"
 
-@interface MainViewController : UIViewController <KanaConverterDelegate>
+@interface MainViewController : UIViewController <KanaConverterDelegate, UITextViewDelegate>
 
 
 @end
