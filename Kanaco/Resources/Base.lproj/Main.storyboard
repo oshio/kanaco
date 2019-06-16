@@ -78,14 +78,12 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIc-b7-zrM">
                                 <rect key="frame" x="20" y="262" width="190" height="44"/>
-                                <color key="backgroundColor" red="0.90528362989425659" green="0.54643326997756958" blue="0.26805785298347473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.9052836299" green="0.54643326999999997" blue="0.26805785300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="85a-6T-1SH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                <state key="normal" title="ひらがなにする">
-                                    <color key="titleColor" red="0.98975080251693726" green="0.93000084161758423" blue="0.88356029987335205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <state key="normal" title="ひらがなにする"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
@@ -110,9 +108,7 @@
                                     <constraint firstAttribute="height" constant="44" id="ehT-D5-GIG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                <state key="normal" title="コピーする">
-                                    <color key="titleColor" red="0.98975080250000003" green="0.93000084159999996" blue="0.88356029989999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <state key="normal" title="コピーする"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
