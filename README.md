@@ -15,7 +15,7 @@
 * Bundler 2.0 or later
 
 ### 利用API
-「かなこ」にはgooラボさんの「ひらがな化API」を利用しています。  
+「かなこ」にはgooラボさんの[「ひらがな化API」](https://labs.goo.ne.jp/api/jp/hiragana-translation/)を利用しています。  
 Xcodeでの実行にはgooラボさんのサイトで発行したAPIキーが必要です。
 
 <a href="http://www.goo.ne.jp/">
