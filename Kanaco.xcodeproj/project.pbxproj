@@ -109,8 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				9627AE6E22B1396700486A26 /* Kanaco */,
-				9627AE8722B1396800486A26 /* KanacoTests */,
-				9627AE9222B1396800486A26 /* KanacoUITests */,
+				9627AEBA22B4C69B00486A26 /* Tests */,
 				9627AE6D22B1396700486A26 /* Products */,
 				E4E9EDBCC6A022053C053531 /* Pods */,
 				F1F9BB1E6199D8BBF7ED5B91 /* Frameworks */,
@@ -136,15 +135,9 @@
 				9627AEA722B13E0800486A26 /* KanaConverter.m */,
 				9627AEA922B146C200486A26 /* APIRequestHandler.h */,
 				9627AEAA22B146C200486A26 /* APIRequestHandler.m */,
-				9627AE7222B1396700486A26 /* MainViewController.h */,
-				9627AE7322B1396700486A26 /* MainViewController.m */,
-				9627AE7522B1396700486A26 /* Main.storyboard */,
-				9627AE7822B1396800486A26 /* Assets.xcassets */,
-				9627AE7A22B1396800486A26 /* LaunchScreen.storyboard */,
-				9627AE7D22B1396800486A26 /* Info.plist */,
-				9627AEB522B4C09800486A26 /* MainViewController+ShowAlert.h */,
-				9627AEB622B4C09800486A26 /* MainViewController+ShowAlert.m */,
+				9627AEB922B4C4F100486A26 /* ViewControllers */,
 				9627AE7E22B1396800486A26 /* main.m */,
+				9627AEB822B4C48E00486A26 /* Resources */,
 			);
 			path = Kanaco;
 			sourceTree = "<group>";
@@ -152,9 +145,9 @@
 		9627AE8722B1396800486A26 /* KanacoTests */ = {
 			isa = PBXGroup;
 			children = (
-				9627AE8822B1396800486A26 /* KanacoTests.m */,
 				9627AEAC22B2962800486A26 /* KanaConverterMock.h */,
 				9627AEAD22B2962800486A26 /* KanaConverterMock.m */,
+				9627AE8822B1396800486A26 /* KanacoTests.m */,
 				9627AE8A22B1396800486A26 /* Info.plist */,
 			);
 			path = KanacoTests;
@@ -167,6 +160,37 @@
 				9627AE9522B1396800486A26 /* Info.plist */,
 			);
 			path = KanacoUITests;
+			sourceTree = "<group>";
+		};
+		9627AEB822B4C48E00486A26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9627AE7D22B1396800486A26 /* Info.plist */,
+				9627AE7522B1396700486A26 /* Main.storyboard */,
+				9627AE7822B1396800486A26 /* Assets.xcassets */,
+				9627AE7A22B1396800486A26 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9627AEB922B4C4F100486A26 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9627AE7222B1396700486A26 /* MainViewController.h */,
+				9627AE7322B1396700486A26 /* MainViewController.m */,
+				9627AEB522B4C09800486A26 /* MainViewController+ShowAlert.h */,
+				9627AEB622B4C09800486A26 /* MainViewController+ShowAlert.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9627AEBA22B4C69B00486A26 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9627AE8722B1396800486A26 /* KanacoTests */,
+				9627AE9222B1396800486A26 /* KanacoUITests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		E4E9EDBCC6A022053C053531 /* Pods */ = {
@@ -574,7 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7NRGVL279;
-				INFOPLIST_FILE = Kanaco/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Kanaco/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7NRGVL279;
-				INFOPLIST_FILE = Kanaco/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Kanaco/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -610,7 +634,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7NRGVL279;
-				INFOPLIST_FILE = KanacoTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/KanacoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,7 +654,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7NRGVL279;
-				INFOPLIST_FILE = KanacoTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/KanacoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,7 +673,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7NRGVL279;
-				INFOPLIST_FILE = KanacoUITests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/KanacoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -668,7 +692,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7NRGVL279;
-				INFOPLIST_FILE = KanacoUITests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/KanacoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
