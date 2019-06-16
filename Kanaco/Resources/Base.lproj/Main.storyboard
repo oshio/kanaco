@@ -124,7 +124,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbo-v0-bcX">
                                 <rect key="frame" x="226" y="262" width="74" height="44"/>
-                                <color key="backgroundColor" red="0.94616788630000004" green="0.73085016010000003" blue="0.56899785999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4yq-xB-Cg3"/>
                                 </constraints>
