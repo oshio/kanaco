@@ -20,6 +20,7 @@
 		9627AEAB22B146C200486A26 /* APIRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AEAA22B146C200486A26 /* APIRequestHandler.m */; };
 		9627AEAE22B2962800486A26 /* KanaConverterMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AEAD22B2962800486A26 /* KanaConverterMock.m */; };
 		9627AEB722B4C09800486A26 /* MainViewController+ShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AEB622B4C09800486A26 /* MainViewController+ShowAlert.m */; };
+		9627AEBF22B5F71D00486A26 /* UIButton+HighlightedBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627AEBE22B5F71D00486A26 /* UIButton+HighlightedBackgroundColor.m */; };
 		BC0CB17F26541B5DE966852D /* libPods-KanacoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B0E0A5F1BF005C9ED61580 /* libPods-KanacoTests.a */; };
 		CDD808781A415C9317A71A81 /* libPods-KanacoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5A89991E4E3C56E0437F3A /* libPods-KanacoUITests.a */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,8 @@
 		9627AEAD22B2962800486A26 /* KanaConverterMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanaConverterMock.m; sourceTree = "<group>"; };
 		9627AEB522B4C09800486A26 /* MainViewController+ShowAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MainViewController+ShowAlert.h"; sourceTree = "<group>"; };
 		9627AEB622B4C09800486A26 /* MainViewController+ShowAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MainViewController+ShowAlert.m"; sourceTree = "<group>"; };
+		9627AEBD22B5F71D00486A26 /* UIButton+HighlightedBackgroundColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HighlightedBackgroundColor.h"; sourceTree = "<group>"; };
+		9627AEBE22B5F71D00486A26 /* UIButton+HighlightedBackgroundColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HighlightedBackgroundColor.m"; sourceTree = "<group>"; };
 		C17D5AA5B4CA6803820E12D7 /* Pods-KanacoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanacoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanacoUITests/Pods-KanacoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6582A904E0D54099B02724E /* Pods-KanacoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanacoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanacoTests/Pods-KanacoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2B0E0A5F1BF005C9ED61580 /* libPods-KanacoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KanacoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +139,7 @@
 				9627AEA922B146C200486A26 /* APIRequestHandler.h */,
 				9627AEAA22B146C200486A26 /* APIRequestHandler.m */,
 				9627AEB922B4C4F100486A26 /* ViewControllers */,
+				9627AEBC22B5F5DA00486A26 /* CustomViews */,
 				9627AE7E22B1396800486A26 /* main.m */,
 				9627AEB822B4C48E00486A26 /* Resources */,
 			);
@@ -191,6 +195,15 @@
 				9627AE9222B1396800486A26 /* KanacoUITests */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		9627AEBC22B5F5DA00486A26 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				9627AEBD22B5F71D00486A26 /* UIButton+HighlightedBackgroundColor.h */,
+				9627AEBE22B5F71D00486A26 /* UIButton+HighlightedBackgroundColor.m */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		E4E9EDBCC6A022053C053531 /* Pods */ = {
@@ -418,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9627AEBF22B5F71D00486A26 /* UIButton+HighlightedBackgroundColor.m in Sources */,
 				9627AE7422B1396700486A26 /* MainViewController.m in Sources */,
 				9627AEB722B4C09800486A26 /* MainViewController+ShowAlert.m in Sources */,
 				9627AEA822B13E0800486A26 /* KanaConverter.m in Sources */,
